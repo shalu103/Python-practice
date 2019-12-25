@@ -23,6 +23,6 @@ class Table:
                 print('Enter only integer number in input.')
 
 if __name__ == "__main__":
-    obj= Table()
+    obj = Table()
     obj.main()
     obj.printable(2,5)
