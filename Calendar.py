@@ -8,9 +8,12 @@ class calendar:
                 import calendar
                 year = int(input('enter the year: '))
                 month = int(input('enter the month'))
-                print(calendar.month(year,month))
-                run = False
-                print('GoodBye!!')
+                if (month<=12):
+                    print(calendar.month(year,month))
+                    run = False
+                    print('GoodBye!!')
+                else:
+                    print('Enter month value in range')
             except:
                 print('Enter only Integer')
 if __name__ == "__main__":
