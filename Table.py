@@ -1,10 +1,10 @@
 class Table:
-    def printTable__init__(startNum, endNum):
+    def printTable(self,startNum, endNum):
         for i in range(1,11):
             for j in range(startNum,endNum+1):  
                 print(i*j, end='\t')
             print('')
-    def main__init__():
+    def main(self):
         run = True
         while run:
             print('\n\n\t\t*******Welcome in TABLE world*******\n')
@@ -14,7 +14,7 @@ class Table:
                 endNum = int(input('Enter end table number: '))
                 diff = endNum-startNum
                 if(diff+1 <= 10):
-                    printTable(startNum, endNum)
+                    self.printTable(startNum, endNum)
                     print('\t\t\tThank you! Visit Again!')
                     run = False
                 else:
@@ -25,4 +25,4 @@ class Table:
 if __name__ == "__main__":
     obj = Table()
     obj.main()
-    obj.printable(2,5)
+    
